@@ -19,7 +19,7 @@
         <img src="wp-content\themes\sage\resources\images\hero image 1.jpg" id="img1" alt="Neighbourhood">
         <div class="hero-phone-wrapper">
             <img src="wp-content\themes\sage\resources\images\iPhone-15-straight.png" id="img2" alt="iPhone">
-            <img src="wp-content\themes\sage\resources\images\Mockup-tm-phone.png" id="img4" alt="iPhone">
+            <img src="wp-content\themes\sage\resources\images\Mockup-hero-mask-phone.png" id="img4" alt="iPhone">
         </div>
         <img src="wp-content\themes\sage\resources\images\Smartwatch.png" id="img3" alt="Smartwatch">
         

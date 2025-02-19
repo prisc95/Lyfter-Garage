@@ -124,14 +124,15 @@ div.hero-container-left {
 div.hero-container-right {
     position: absolute;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 70%;
     height: 100%;
     right: 0;
 
     .hero-phone-wrapper {
-        width: 26%;
-        height: 100%;
+        min-width: 35%;
+        width: 35%;
+        height: 75vh;
         bottom: -4%;
         right: 21%;
         position: absolute;
@@ -143,7 +144,7 @@ div.hero-container-right {
         #img2 {
             position: absolute;
             height: 100%;
-            width: 100%;
+            width: 91%;
             top: 0;
     
         
@@ -151,26 +152,22 @@ div.hero-container-right {
 
         #img4 {
             position: absolute;
-            height: 100%;
+            rotate: -4.36deg;
             top: 0;
+            left: -1%;
             border-radius: 50px;
-            padding: 10px;
-    
+            padding: 0px 3px;
         }
     }
 
     #img1 {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         position: absolute;
         bottom: 0%;
-        clip-path: circle(50% at 65% 90%);
+        clip-path: circle(50% at 61% 90%);
     }
     
-        
-      
-
-
     
     #img3 {
         width: 38%;
@@ -214,32 +211,6 @@ div.hero-container-right {
         font-size: 18px;
     }
 }
-
-    div.hero-container-right {
-        .hero-phone-wrapper {
-            width: 26%;
-             height: 100%;
-             bottom: -4%;
-             right: 21%;
-             position: absolute;
-                display: flex;
-           justify-content: center;
-           align-items: center;
-          rotate: 4.39deg;
-
-        }
-        #img1 {
-            bottom: -10%;
-            clip-path: circle(50% at 65% 81%);
-        }
-        
-        
-        #img3 {
-            width: 40%;
-            bottom: -7%;
-            right: 32%;
-        }
-    }
 }
 
 
@@ -265,25 +236,7 @@ div.hero-container-right {
         font-size: 18px;
     }
     }
-    
-    div.hero-container-right {
 
-        .hero-phone-wrapper {
-            width: 26%;
-            bottom: -18%;
-
-        }
-        #img1 {
-            clip-path: circle(50% at 60% 82%);
-        }
-        
-        
-        #img3 {
-            width: 38%;
-            bottom: -7%;
-            right: 34%;
-        }
-    }
 }
 
 
@@ -317,24 +270,6 @@ div.hero-container-right {
         }
     }
 }
-
-    div.hero-container-right {
-
-        .hero-phone-wrapper {
-            width: 35%;
-            bottom: -26%;
-        }
-        #img1 {
-            clip-path: circle(50% at 60% 80%);
-        }
-        
-   
-        #img3 {
-            width: 42%;
-            bottom: -4%;
-            right: 37%;
-        }
-    }
 }
 
 
@@ -367,20 +302,7 @@ div.hero-container-right {
             font-size: 15px;
         }
     }
-    
-        div.hero-container-right {
-            z-index: 0;
-            #img1 {
-                right: -28%;
-                bottom: 0;
-                clip-path: circle(50% at 50% 78%);
-            }
-    
-            #img3 {
-                bottom: 0;
-                right: 32%;
-            }
-        }
+
     }
 
 
@@ -450,11 +372,3 @@ div.hero-container-right {
 
 
   }
-
-
-
-
-  
-
-
-
