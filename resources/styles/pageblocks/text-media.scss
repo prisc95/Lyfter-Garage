@@ -1,0 +1,233 @@
+section.text-media {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 90px;
+}
+
+.tm-container-left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 55%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .label {
+        width: 91px;
+        height: 44px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px solid #0000001A; 
+        border-radius: 30px;
+        font-family: "Gabarito", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23.8px;
+    }
+    
+    h1 {
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 57.2px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+   p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30.6px;
+        padding-right: 20px;
+    }
+    
+    .tm-btn-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-top: 5%;
+
+        .btn {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                gap: 25%;
+            }
+        }
+
+        
+        .btn-left {
+            width: 142px;
+            height: 60px;
+            padding: 20px 28px;
+            background-color: #00D1B2;
+            color: #FFF;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 18px;
+        
+            &:hover {
+                border: 2px solid #00D1B2;
+                box-shadow: 0px 0px 0px 6px #00D1B233;
+              }
+        }
+        
+        .btn-right {
+            width: 142px;
+            height: 60px;
+            padding: 20px 28px;
+            background-color: #000000;
+            color: #FFF;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 19.8px;
+        
+            
+            &:hover {
+                border: 2px solid #000000;
+                box-shadow: 0px 0px 0px 6px #0000001A;
+              }
+        }
+    }
+    
+
+}
+
+.tm-container-right {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 45%;
+    border-radius: 20px;
+    background-color: #4285F41A;
+
+    .swirl {
+        position: relative;
+        max-width: 200%;
+        width: 114%;
+        top: 65px;
+        left: -7%;
+    }
+
+    .tm-img-wrapper {
+        width: 100%;
+        height: 120%;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        flex-wrap: nowrap;
+        position: absolute;
+        overflow: hidden;
+
+        #img1 {
+            width: 70%;
+            height: 100%;
+            top: 10%;
+            position: absolute;
+            rotate: 2.57deg;
+            }
+    
+        #img2 {
+            width: 72%;
+            height: 100%;
+            top: 10%;
+            right: 14.5%;
+            position: absolute;
+            }
+    }
+}
+
+/* Ready: 
+    1280 x 720
+    1366 x 768
+    1440 x 900
+    1920 x 1080
+*/
+
+@media screen and (min-width: 1280px) and (max-width: 1599px){
+
+}
+
+/*iPad Pro: 1024 x 1366 (vertical) --> ready */
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    .tm-container-left {
+        
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .tm-container-right {
+        top: 2%;
+    
+        .tm-img-wrapper {
+            min-width: 80%;
+            height: 120%;
+        }
+    }
+}
+
+/*iPad Air: 820 x 1180 (vertical) --> ready */
+/*iPad Mini: 768 x 1024 (vertical) --> ready */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .tm-container-left {
+        
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .tm-container-right {
+        top: 2%;
+    
+        .tm-img-wrapper {
+            min-width: 80%;
+            height: 120%;
+
+        
+            img {
+                min-width: 40%;
+                }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px){
+
+}
+
+
+
+  

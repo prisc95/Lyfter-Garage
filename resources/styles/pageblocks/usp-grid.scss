@@ -1,0 +1,214 @@
+section.usp-grid {
+    width: 100vw;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: 1px solid #0000001A;
+        border-radius: 20px;
+        padding: 36px;
+
+        &:hover {
+            border: 1px solid var(--Neutrals-200, #00000033);
+
+            .card-icon { 
+                background-color:  #00d1b2;
+
+                .fa-solid {
+                    color: white;
+                }
+            }
+
+            .card-chevron {
+
+                .fa-chevron-right {
+                    color: #000000;
+
+                }
+            }
+        }
+    
+        .card-icon {
+            width: 70px;
+            height: 70px;
+            background-color: #00D1B21A;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .fa-solid {
+                color: #00d1b2;
+            }
+    
+            .fa-shield-halved {
+                width: 20px;
+                height: 20px;
+                font-size: 20px;
+                
+            }
+            
+            .fa-house-lock, .fa-door-open {
+                width: 25px;
+                height: 20px;
+                font-size: 20px;
+            }
+        }
+        
+        .card-chevron {
+            display: flex;
+            justify-content: flex-end;
+    
+            .fa-chevron-right {
+                width: 13px;
+                height: 20px;
+                font-size: 20px;
+                color: #d9d8d8;
+            }
+        }
+        
+        .usp-head {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 29px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        
+        .usp-par {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 31px;
+        }
+    }
+}
+
+
+
+
+
+/* Ready: 
+    1280 x 720
+    1366 x 768
+    1440 x 900
+    1920 x 1080
+*/
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+
+}
+
+/*iPad Pro: 1024 x 1366 (vertical) --> ready */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+
+}
+
+/*iPad Air: 820 x 1180 (vertical) --> ready */
+/*iPad Mini: 768 x 1024 (vertical) --> ready */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px){
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 641px){
+    
+.card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .card {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        justify-content: space-between;
+        border: 1px solid #0000001A;
+        border-radius: 20px;
+        padding: 36px;
+
+        &:hover {
+            border: 1px solid var(--Neutrals-200, #00000033);
+
+            .card-icon { 
+                background-color:  #00d1b2;
+
+                .fa-solid {
+                    color: white;
+                }
+            }
+
+            .card-chevron {
+
+                .fa-chevron-right {
+                    color: #000000;
+
+                }
+            }
+        }
+    
+        .card-icon {
+            width: 70px;
+            height: 70px;
+            background-color: #00D1B21A;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .fa-solid {
+                color: #00d1b2;
+            }
+    
+            .fa-shield-halved {
+                width: 20px;
+                height: 20px;
+                font-size: 20px;
+                
+            }
+            
+            .fa-house-lock, .fa-door-open {
+                width: 25px;
+                height: 20px;
+                font-size: 20px;
+            }
+        }
+        
+        .card-chevron {
+            display: flex;
+            justify-content: flex-end;
+    
+            .fa-chevron-right {
+                width: 13px;
+                height: 20px;
+                font-size: 20px;
+                color: #d9d8d8;
+            }
+        }
+}}
+}
