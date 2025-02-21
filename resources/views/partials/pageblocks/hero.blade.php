@@ -6,7 +6,7 @@
 <section class="hero">
     <div class="container">
         <div class="hero-container-left">
-            <label for="hero-label"><i class="fa-solid fa-circle" style="color: #00d1b2;"></i>Lyfter garage</label>
+            <label for="hero-label"><i></i>Lyfter garage</label>
             <div><h1>Everyday Convenience</h1></div>
             <p>At Lyfter, we make smart devices to automate your home. Convenient, secure and customizable.</p>
             <div class="hero-btn-wrapper">

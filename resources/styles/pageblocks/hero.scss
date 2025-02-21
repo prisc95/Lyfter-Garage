@@ -40,14 +40,13 @@ div.hero-container-left {
         font-size: 14px;
         line-height: 24px;
         
-    }
-
-    .hero-icon {
+    i {
         width: 12px;
         height: 12px;
         background-color: #00D1B2;
         border-radius: 999px;
     }
+}
 
     h1 {
         font-weight: 700;
@@ -152,7 +151,7 @@ div.hero-container-right {
             max-width: 150% !important;
             width: 110%;
             rotate: -4.36deg;
-            border-radius: 50px;
+            border-radius: 10px;
             left: -6.2%;
             top: -0.25%;
 
@@ -220,6 +219,7 @@ div.hero-container-right {
             right: 19%;
         }
 
+
         #img3 {
             bottom: -10%;
     }
@@ -227,7 +227,7 @@ div.hero-container-right {
 }
 
 
-
+/*1024 x 768 iPad -> ready*/
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
 
     div.hero-container-left {
@@ -239,7 +239,7 @@ div.hero-container-right {
 
     label {
         font-size: 12px;
-        margin-top: 10%;
+        margin-top: 20%;
     }
 
     p {
@@ -248,7 +248,7 @@ div.hero-container-right {
     }
 
     .hero-btn-wrapper {
-        margin-bottom: 20%;
+        margin-bottom: 30%;
 
     .hero-btn-left {
         width: 170px;
@@ -273,70 +273,124 @@ div.hero-container-right {
 
 div.hero-container-right {
     .hero-phone-wrapper {
-        bottom: -8%;
+        bottom: -12%;
         right: 19%;
     }
 
     #img1 {
-        bottom: -20%;
+        bottom: -10%;
     }
     
     
     #img3 {
-        width: 40%;
-        height: auto;
-        position: absolute;
-        bottom: -12%;
-        right: 34%;
-        z-index: 3;
-        rotate: 17deg;
-        z-index: 4    
+        bottom: -7%; 
+        right: 32%;
+}    
+}
 }
 
+
+/*768 x 1024 iPad -> ready*/
+/*800 x 1280 Google Nexus -> ready*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+    div.hero-container-left {
     
-
-
+        label {
+            width: 50%;
+            margin-top: 20%;
+        i {
+            width: 8px;
+            height: 8px;
+            background-color: #00D1B2;
+            border-radius: 999px;
+        }
+    }
+        h1 {
+            font-size: 60px;
+            line-height: 55px;
+            padding-bottom: 15px;
+        }
     
-}
-}
+        p {
+            width: 300px;
+            font-size: 16px;
+            line-height: 28px;
+            padding-bottom: 20px;
+        }
+    }
+    
+    
+    
+    
+    .hero-btn-wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 30%;
+    
+        .hero-btn-left {
+            width: 220px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 16px;
 
-
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-   div.container {
-    height: 500px;
-   }
+        }
+        
+        .hero-btn-right {
+            width: 224px;
+            height: 50px;
+            font-size: 16px;
+        }
+    }
+    
+    
+    div.hero-container-right {
+        .hero-phone-wrapper {
+            width: 38%;
+            bottom: -24%;
+            right: 12%;
+            
+        }
+    
+        #img1 {
+            right: -8%;
+            bottom: -5%;
+        }
+        
+        
+        #img3 {
+            width: 42%;
+            bottom: -3%; 
+            right: 34%;
+    }    
+    }
+    
 
     }
 
 
 @media screen and (min-width: 640px) and (max-width: 767px){
 
-}
-
-@media screen and (min-width: 360px) and (max-width: 641px){
-
-    .container {
+    section.hero div.container {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
 
         div.hero-container-left {
-            width: 80%;
+            width: 90%;
             height: 100%;
         
-            .hero-label {
-                width: 35%;
+            label {
+                width: 110px;
                 height: 5%;
-                background-color: white;
-                border-radius: 30px;
-                font-size: 14px;
+                font-size: 12px;
+                margin-top: 10%;
             }
         
             h1 {
                 font-size: 50px;
                 line-height: 55px;
+                padding-top: 10px;
             }
         
             p {
@@ -345,24 +399,99 @@ div.hero-container-right {
             }
 
             .hero-btn-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 20%;
     
                 .hero-btn-left {
-                    width: 50%;
-                    height: 60px;
+                    width: 100%;
+                    height: 50px;
                     font-size: 16px;
 
-                    i {
-                        display: none;
+                    a{
+                        justify-content: center;
+                        gap: 12px;
                     }
                 }
                 
                 .hero-btn-right {
-                    width: 50%;
-                    height: 60px;
+                    width: 100%;
+                    height: 50px;
                     font-size: 16px;
                     
-                    i {
-                        display: none;
+                    a{
+                        justify-content: center;
+                        gap: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    div.hero-container-right {
+      display: none;
+    }
+
+
+  }
+
+
+
+@media screen and (min-width: 360px) and (max-width: 641px){
+
+    section.hero div.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        div.hero-container-left {
+            width: 90%;
+            height: 100%;
+        
+            label {
+                width: 35%;
+                height: 5%;
+                font-size: 12px;
+                margin-top: 10%;
+            }
+        
+            h1 {
+                font-size: 50px;
+                line-height: 55px;
+                padding-top: 10px;
+            }
+        
+            p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            .hero-btn-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 20%;
+    
+                .hero-btn-left {
+                    width: 100%;
+                    height: 50px;
+                    font-size: 16px;
+
+                    a{
+                        justify-content: center;
+                        gap: 12px;
+                    }
+                }
+                
+                .hero-btn-right {
+                    width: 100%;
+                    height: 50px;
+                    font-size: 16px;
+                    
+                    a{
+                        justify-content: center;
+                        gap: 12px;
                     }
                 }
             }
