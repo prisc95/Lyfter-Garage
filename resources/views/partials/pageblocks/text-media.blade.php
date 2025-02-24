@@ -1,7 +1,7 @@
 <section class="text-media">
     <div class="container">
         <div class="tm-container-left">
-        <label for="label" class="label"><i class="fa-solid fa-circle" style="color: #00d1b2;"></i>&nbsp;&nbsp;Label</label>
+        <label for="label" class="label"><i class="circle"></i>Label</label>
         <h1>This is a large title</h1>
         <p>Lorem ipsum dolor sit amet consectetur. Diam vel at eget tristique a mattis tempor urna convallis. Cursus duis dignissim in lorem at amet. Vitae auctor leo nunc faucibus quis sagittis volutpat rutrum. Est posuere imperdiet scelerisque arcu quis bibendum mi.</p>
         <div class="tm-btn-wrapper">
