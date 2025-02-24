@@ -6,6 +6,7 @@ body {
 
 section.header {
     height: 15vh;  
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,12 +33,14 @@ section.header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 25px;
 
     .nav-text-wrapper {
       width: 50%;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: flex-end;
+      gap: 25px;
 
       .nav-text {
         font-family: "Gabarito", sans-serif;
@@ -153,7 +156,40 @@ section.header {
  
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .nav-left{
+    width: 25%;
+  }
+  
+  .nav-right {
+    width: 65%;
 
+    .nav-text-wrapper {
+      width: 50%;
+
+      .nav-text {
+        font-size: 18px;
+      }
+    }
+
+    .nav-btn-wrapper {
+      width: 50%;
+
+      .nav-btn {
+        font-size: 18px;
+    }
+      
+      .btn-left {
+        min-width: 40%;
+      }
+     
+      
+      .btn-right {
+        min-width: 60%;
+        
+      }
+    } 
+    
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -163,12 +199,13 @@ section.header {
   
   .nav-right {
     width: 75%;
+    gap: 10px;
 
     .nav-text-wrapper {
       width: 50%;
 
       .nav-text {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
@@ -195,11 +232,21 @@ section.header {
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px){
-
+  .nav-right {
+    display: none;
+  }
+  
+  .dropdown {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 360px) and (max-width: 641px){
+  .nav-right {
+    display: none;
+  }
+  
   .dropdown {
-    display: visible;
+    display: block;
   }
 }
