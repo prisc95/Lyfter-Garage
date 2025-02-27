@@ -23,9 +23,9 @@
         </div>
     </div>
 
-    <div class="dropdown">
-        <span><i class="fa-solid fa-bars fa-xl"></i></span>
-        <div class="dropdown-content">
+    <div class="dropdown" id="dropdown">
+        <span><i class="fa-solid fa-bars fa-xl" id="fa-bars"></i></span>
+        <div class="dropdown-content" id="dropdown-content">
           <a href="#" class="nav-text">Lyfter Garage</a>
           <a href="#" class="nav-text">Lyfter Doorbell</a>
           <a href="#" class="nav-text">Support</a>
