@@ -88,6 +88,7 @@ collect(['setup', 'filters'])
         register_block_type( __DIR__ . '/blocks/hero' );
         register_block_type( __DIR__ . '/blocks/usp-grid' );
         register_block_type( __DIR__ . '/blocks/media-text' );
+        register_block_type( __DIR__ . '/blocks/text-media' );
     }
 
     // Here we call our tt3child_register_acf_block() function on init.
