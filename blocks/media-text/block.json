@@ -1,0 +1,16 @@
+{
+    "name": "acf/media-text",
+    "title": "Media-text",
+    "description": "Media-text",
+    "style": [ "file:./media-text.css" ],
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["media-text", "quote"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "media-text.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
