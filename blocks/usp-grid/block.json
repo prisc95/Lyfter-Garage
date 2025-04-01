@@ -1,0 +1,16 @@
+{
+    "name": "acf/usp-grid",
+    "title": "USP-grid",
+    "description": "usp-grid",
+    "style": [ "file:./usp-grid.css" ],
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["usp-grid", "quote"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "usp-grid.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
